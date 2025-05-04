@@ -13,18 +13,18 @@ const Header = () => {
         }
     }
     return (
-        <div className="header">
-            <div className="logo-container">
-                <img className="logo" src={LOGO}/>
+        <div className="flex justify-between">
+            <div className="">
+                <img className="" src={LOGO} alt="logo"/>
             </div>
 
-            <div className="nav-items">
-                <ul>
+            <div className="">
+                <ul className="flex gap-2">
                     <Link to={'/'}>Home</Link>
                     <Link to={'/about'}>About Us</Link>
                     <Link to={'/contact'}>Contact Us</Link>
                     <Link to={'/cart'}>Cart</Link>
-                    <button className="login" onClick={handleBtnClick}>{btnName}</button>
+                    <button className="" onClick={handleBtnClick}>{btnName}</button>
                 </ul>
             </div>
         </div>

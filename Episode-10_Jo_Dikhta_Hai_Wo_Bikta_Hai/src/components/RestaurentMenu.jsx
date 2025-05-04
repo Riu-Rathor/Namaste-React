@@ -1,7 +1,7 @@
 const RestaurentMenu = () => {
     
     return (
-        <div className="menu">
+        <div className="">
             <h1>Name of the Restaurent</h1>
             <h2>Menu</h2>
             <ul>

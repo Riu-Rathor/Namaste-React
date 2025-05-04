@@ -3,7 +3,7 @@ import React from "react";
 const RestaurentCard = ({restaurent}) => {
     const {name, image, cuisine, rating, deliveryTime, price, location} = restaurent;
     return (
-        <div className="restaurent-card">
+        <div className="flex flex-col m-4 p-4 w-[200px] hover:cursor-pointer bg-gray-100">
             <h3>{name}</h3>
             <img className="res-img" src={image}/>
             <h4>{cuisine}</h4>

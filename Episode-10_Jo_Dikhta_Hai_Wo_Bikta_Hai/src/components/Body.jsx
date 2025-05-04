@@ -29,28 +29,28 @@ const Body = () => {
     }
 
     return (
-        <div className="main-body"> 
-            <div className="filter">
-                <div className="search">
-                    <input type="text" 
+        <div className=""> 
+            <div className="flex">
+                <div className="m-4 p-4">
+                    <input type="" 
                     placeholder="Search"
-                    className="search-bar"
+                    className="border-solid border-black"
                     value={searchText}
                     onChange={(e) => setSearchText(e.target.value)}/>
-                    <button className="btn-search" onClick={handleSearch}>
+                    <button className="px-4 py-2 bg-green-100 m-4" onClick={handleSearch}>
                         <CiSearch/>
                     </button>
 
                 </div>
-                <button className="filter-btn" onClick={getTopRatedRestaurents}>
+                <button className="px-4 py-2 bg-gray-100" onClick={getTopRatedRestaurents}>
                     Top Rated Restaurents
                 </button>
 
-                <button className="filter-btn" onClick={getAllRestaurents}>
+                <button className="" onClick={getAllRestaurents}>
                     All Restaurents
                 </button>
             </div>
-            <div className="restaurent-container">
+            <div className="flex flex-wrap">
                 {
                     filteredRestaurent.map((restaurent, index) => (
                         <RestaurentCard restaurent={restaurent} key={index}/>
