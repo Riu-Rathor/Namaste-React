@@ -6,7 +6,8 @@ const restaurents = [
       "deliveryTime": "30 mins",
       "cuisine": "Italian",
       "price": "₹250 for one",
-      "location": "MG Road, Bangalore"
+      "location": "MG Road, Bangalore",
+      "promoted" : true
     },
     {
       "name": "Spicy Treat",
@@ -15,7 +16,8 @@ const restaurents = [
       "deliveryTime": "25 mins",
       "cuisine": "North Indian",
       "price": "₹300 for one",
-      "location": "Koramangala, Bangalore"
+      "location": "Koramangala, Bangalore",
+      "promoted" : false
     },
     {
       "name": "Sushi Delight",
@@ -24,7 +26,8 @@ const restaurents = [
       "deliveryTime": "40 mins",
       "cuisine": "Japanese",
       "price": "₹500 for one",
-      "location": "HSR Layout, Bangalore"
+      "location": "HSR Layout, Bangalore",
+      "promoted" : true
     },
     {
       "name": "Burger House",
@@ -33,7 +36,8 @@ const restaurents = [
       "deliveryTime": "20 mins",
       "cuisine": "Fast Food",
       "price": "₹200 for one",
-      "location": "Indiranagar, Bangalore"
+      "location": "Indiranagar, Bangalore",
+      "promoted" : false
     },
     {
       "name": "Tandoori Flames",
@@ -42,7 +46,8 @@ const restaurents = [
       "deliveryTime": "35 mins",
       "cuisine": "Mughlai",
       "price": "₹400 for one",
-      "location": "JP Nagar, Bangalore"
+      "location": "JP Nagar, Bangalore",
+      "promoted" : false
     },
     {
       "name": "Green Leaf",
@@ -51,7 +56,8 @@ const restaurents = [
       "deliveryTime": "20 mins",
       "cuisine": "Healthy",
       "price": "₹350 for one",
-      "location": "Whitefield, Bangalore"
+      "location": "Whitefield, Bangalore",
+      "promoted" : false
     },
     {
       "name": "Taco Fiesta",
@@ -60,7 +66,8 @@ const restaurents = [
       "deliveryTime": "30 mins",
       "cuisine": "Mexican",
       "price": "₹280 for one",
-      "location": "Bellandur, Bangalore"
+      "location": "Bellandur, Bangalore",
+      "promoted" : true
     },
     {
       "name": "Wok & Roll",
@@ -69,7 +76,8 @@ const restaurents = [
       "deliveryTime": "35 mins",
       "cuisine": "Chinese",
       "price": "₹320 for one",
-      "location": "Electronic City, Bangalore"
+      "location": "Electronic City, Bangalore",
+      "promoted" : true
     },
     {
       "name": "Sweet Cravings",
@@ -78,7 +86,8 @@ const restaurents = [
       "deliveryTime": "25 mins",
       "cuisine": "Desserts",
       "price": "₹180 for one",
-      "location": "Brigade Road, Bangalore"
+      "location": "Brigade Road, Bangalore",
+      "promoted" : false
     },
     {
       "name": "Mediterranean Bites",
@@ -87,7 +96,8 @@ const restaurents = [
       "deliveryTime": "40 mins",
       "cuisine": "Mediterranean",
       "price": "₹450 for one",
-      "location": "Indiranagar, Bangalore"
+      "location": "Indiranagar, Bangalore",
+      "promoted" : false
     }
   ]
   

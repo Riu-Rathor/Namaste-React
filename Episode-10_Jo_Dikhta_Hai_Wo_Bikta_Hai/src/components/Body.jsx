@@ -53,6 +53,7 @@ const Body = () => {
             <div className="flex flex-wrap">
                 {
                     filteredRestaurent.map((restaurent, index) => (
+                        
                         <RestaurentCard restaurent={restaurent} key={index}/>
                     ))
                 }

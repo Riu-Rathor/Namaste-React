@@ -13,7 +13,7 @@ const Header = () => {
         }
     }
     return (
-        <div className="flex justify-between">
+        <div className="flex justify-between h-10 bg-green-200">
             <div className="">
                 <img className="" src={LOGO} alt="logo"/>
             </div>
@@ -24,7 +24,7 @@ const Header = () => {
                     <Link to={'/about'}>About Us</Link>
                     <Link to={'/contact'}>Contact Us</Link>
                     <Link to={'/cart'}>Cart</Link>
-                    <button className="" onClick={handleBtnClick}>{btnName}</button>
+                    <button className="px-2 bg-green-100" onClick={handleBtnClick}>{btnName}</button>
                 </ul>
             </div>
         </div>
