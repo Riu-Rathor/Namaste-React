@@ -61,7 +61,7 @@ const Body = () => {
         <div>
           <label>User Name</label>
           <input className="border border-black" 
-          value={loggedInUser}
+          value={loggedInUser || ""}
         onChange={(event) => setUserName(event.target.value)}></input>
         </div>
       </div>
