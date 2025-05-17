@@ -10,6 +10,9 @@ import ContactUs from "./components/ContactUs.jsx";
 import NotFound from "./components/NotFound.jsx";
 import RestaurentCard from "./components/RestaurentCard.jsx";
 import UserContext from "./utils/UserContext.js";
+import {Provider} from 'react-redux';
+import appStore from "./utils/appStore.js";
+import Cart from "./components/Cart.jsx";
 
 
 const AppLayout = () => {
@@ -22,6 +25,7 @@ const AppLayout = () => {
         setUserName(data.name);
     }, []);
     return (
+        <Provider store={appStore}>
         <UserContext.Provider value={{loggedInUser: userName, setUserName}}>
         <div id="app">
             <Header/>
@@ -29,6 +33,7 @@ const AppLayout = () => {
             <Footer/>
         </div>
         </UserContext.Provider>
+        </Provider>
     )
 }
 
@@ -52,6 +57,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/restaurents/:id",
                 element: <RestaurentCard/>
+            },
+            {
+                path: "/cart",
+                element: <Cart/>
             }
         ],
         errorElement: <NotFound/>

@@ -5,12 +5,15 @@
     "tailwindcss": "^4.1.5"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.1",
     "@tailwindcss/postcss": "^4.1.5",
     "parcel": "^2.14.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^6.22.3"
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.22.3",
+    "redux": "^5.0.1"
   },
   "scripts": {
     "start": "parcel index.html"

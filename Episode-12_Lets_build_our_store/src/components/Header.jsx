@@ -2,10 +2,12 @@ import React, { useContext, useState } from "react";
 import LOGO from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
+import {useSelector} from "react-redux";
 
 const Header = () => {
   const data = useContext(UserContext);
   const [btnName, setBtnName] = useState("Login");
+  const cartItems = useSelector((store) => store.cart.items);
   const handleBtnClick = () => {
     if (btnName === "Login") {
       setBtnName("Logout");
@@ -41,9 +43,9 @@ const Header = () => {
 
           <Link
             to={"/cart"}
-            className="hover:text-lg transition-all duration-200"
+            className="hover:text-lg transition-all duration-200 font-bold"
           >
-            Cart
+            Cart ({cartItems.length} items)
           </Link>
 
           <button
